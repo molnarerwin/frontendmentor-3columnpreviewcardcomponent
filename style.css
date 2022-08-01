@@ -114,12 +114,6 @@ main.columncard p.description {
     main.columncard {
         flex-direction: column;
     }
-}
-
-@media (max-width: 350px) {
-    main.columncard div.card {
-        padding: 35px;
-    }
 
     main.columncard div.card {
         align-items: center;
@@ -128,5 +122,11 @@ main.columncard p.description {
 
     main.columncard div.card p.description {
         text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    main.columncard div.card {
+        padding: 35px;
     }
 }
