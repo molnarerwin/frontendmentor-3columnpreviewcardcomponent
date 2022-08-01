@@ -32,7 +32,6 @@ main.columncard div.card {
     padding: 45px;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
-
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -111,7 +110,7 @@ main.columncard p.description {
     line-height: 1.4em;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 790px) {
     main.columncard {
         flex-direction: column;
     }
@@ -124,6 +123,7 @@ main.columncard p.description {
 
     main.columncard div.card {
         align-items: center;
+        max-width: 100%;
     }
 
     main.columncard div.card p.description {
