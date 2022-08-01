@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 15px;
+}
+
+main.columncard {
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main.columncard div.card {
+    height: 500px;
+    width: 300px;
+    padding: 45px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main.columncard div.card button {
+    margin-top: 40px;
+    height: 50px;
+    width: 145px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* ORANGE CARD */
+main.columncard div.card:first-of-type {
+    background-color: hsl(31, 77%, 52%);
+}
+
+main.columncard div.card:first-of-type button {
+    color: hsl(31, 77%, 52%);
+}
+
+main.columncard div.card:first-of-type button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+/* DARKCYAN CARD */
+main.columncard div.card:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+main.columncard div.card:nth-of-type(2) button {
+    color: hsl(184, 100%, 22%);
+}
+
+main.columncard div.card:nth-of-type(2) button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+/* VERY DARKCYAN CARD */
+main.columncard div.card:last-of-type {
+    background-color: hsl(179, 100%, 13%);
+}
+
+main.columncard div.card:last-of-type button {
+    color: hsl(179, 100%, 13%);
+}
+
+main.columncard div.card:last-of-type button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+main.columncard img {
+    height: 40px;
+    width: 64px;
+}
+
+main.columncard p.type {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+main.columncard p.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.4em;
+}
+
+@media (max-width: 780px) {
+    main.columncard {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    main.columncard div.card {
+        padding: 35px;
+    }
+
+    main.columncard div.card {
+        align-items: center;
+    }
+
+    main.columncard div.card p.description {
+        text-align: center;
+    }
+}
